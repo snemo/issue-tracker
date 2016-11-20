@@ -1,0 +1,12 @@
+version: '2'
+services:
+    issuetracker-postgresql:
+        container_name: issuetracker-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/IssueTracker/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=IssueTracker
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432

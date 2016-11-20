@@ -1,0 +1,11 @@
+{
+    "issueTrackerApp": {
+        "Priority" : {
+            "null": "",
+            "MINOR": "MINOR",
+            "NORMAL": "NORMAL",
+            "MAJOR": "MAJOR",
+            "BLOCKER": "BLOCKER"
+        }
+    }
+}

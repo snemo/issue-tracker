@@ -1,0 +1,30 @@
+{
+    "issueTrackerApp": {
+        "issue" : {
+            "home": {
+                "title": "Issues",
+                "createLabel": "Dodaj Issue",
+                "createOrEditLabel": "Dodaj lub edytuj: Issue",
+                "search": "Search for Issue"
+            },
+            "created": "A new Issue is created with identifier {{ param }}",
+            "updated": "A Issue is updated with identifier {{ param }}",
+            "deleted": "A Issue is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Issue {{ id }}?"
+            },
+            "detail": {
+                "title": "Issue"
+            },
+            "name": "Name",
+            "description": "Description",
+            "created": "Created",
+            "state": "State",
+            "priority": "Priority",
+            "attachment": "Attachment",
+            "comment": "Comment",
+            "originator": "Originator",
+            "assignee": "Assignee"
+        }
+    }
+}

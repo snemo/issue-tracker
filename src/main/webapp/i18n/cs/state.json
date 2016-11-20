@@ -1,0 +1,11 @@
+{
+    "issueTrackerApp": {
+        "State" : {
+            "null": "",
+            "OPEN": "OPEN",
+            "INPROGRESS": "INPROGRESS",
+            "RESOLVED": "RESOLVED",
+            "CLOSED": "CLOSED"
+        }
+    }
+}

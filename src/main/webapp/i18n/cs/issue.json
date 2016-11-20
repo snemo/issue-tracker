@@ -1,0 +1,30 @@
+{
+    "issueTrackerApp": {
+        "issue" : {
+            "home": {
+                "title": "Issues",
+                "createLabel": "Vytvořit Issue",
+                "createOrEditLabel": "Vytvořit nebo upravit Issue",
+                "search": "Vyhledat Issue"
+            },
+            "created": "Byl vytvořen potomek entity Issue s identifikátorem {{ param }}",
+            "updated": "Potomek entity Issue s identifikátorem {{ param }} byl upravený.",
+            "deleted": "Potomek entity Issue s identifikátorem {{ param }} bol smazaný.",
+            "delete": {
+                "question": "Jste si jisti, že chcete smazat Issue {{ id }}?"
+            },
+            "detail": {
+                "title": "Issue"
+            },
+            "name": "Name",
+            "description": "Description",
+            "created": "Created",
+            "state": "State",
+            "priority": "Priority",
+            "attachment": "Attachment",
+            "comment": "Comment",
+            "originator": "Originator",
+            "assignee": "Assignee"
+        }
+    }
+}

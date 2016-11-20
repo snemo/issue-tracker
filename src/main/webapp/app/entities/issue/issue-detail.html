@@ -1,0 +1,58 @@
+
+<div>
+    <h2><span data-translate="issueTrackerApp.issue.detail.title">Issue</span> {{vm.issue.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="issueTrackerApp.issue.name">Name</span></dt>
+        <dd>
+            <span>{{vm.issue.name}}</span>
+        </dd>
+        <dt><span data-translate="issueTrackerApp.issue.description">Description</span></dt>
+        <dd>
+            <span>{{vm.issue.description}}</span>
+        </dd>
+        <dt><span data-translate="issueTrackerApp.issue.created">Created</span></dt>
+        <dd>
+            <span>{{vm.issue.created | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span data-translate="issueTrackerApp.issue.state">State</span></dt>
+        <dd>
+            <span data-translate="{{'issueTrackerApp.State.' + vm.issue.state}}">{{vm.issue.state}}</span>
+        </dd>
+        <dt><span data-translate="issueTrackerApp.issue.priority">Priority</span></dt>
+        <dd>
+            <span data-translate="{{'issueTrackerApp.Priority.' + vm.issue.priority}}">{{vm.issue.priority}}</span>
+        </dd>
+        <dt><span data-translate="issueTrackerApp.issue.attachment">Attachment</span></dt>
+        <dd>
+            <div ng-if="vm.issue.attachment">
+                <a ng-click="vm.openFile(vm.issue.attachmentContentType, vm.issue.attachment)" data-translate="entity.action.open">open</a>
+                {{vm.issue.attachmentContentType}}, {{vm.byteSize(vm.issue.attachment)}}
+            </div>
+        </dd>
+        <dt><span data-translate="issueTrackerApp.issue.comment">Comment</span></dt>
+        <dd>
+            <span>{{vm.issue.comment}}</span>
+        </dd>
+        <dt><span data-translate="issueTrackerApp.issue.originator">Originator</span></dt>
+        <dd>
+            {{vm.issue.originator.id}}
+        </dd>
+        <dt><span data-translate="issueTrackerApp.issue.assignee">Assignee</span></dt>
+        <dd>
+            {{vm.issue.assignee.id}}
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="issue-detail.edit({id:vm.issue.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

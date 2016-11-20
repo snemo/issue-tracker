@@ -1,0 +1,28 @@
+
+
+
+enum State {
+	OPEN, INPROGRESS, RESOLVED, CLOSED
+}
+
+enum Priority {
+	MINOR, NORMAL, MAJOR, BLOCKER
+}
+
+entity Issue {
+	name String required
+    description String required
+    created LocalDate required
+    state State
+    priority Priority
+    attachment AnyBlob
+    comment String
+}
+
+relationship ManyToOne {
+	Issue{originator} to User,
+    Issue{assignee} to User
+}
+
+paginate Issue with pagination
+service Issue with serviceClass
